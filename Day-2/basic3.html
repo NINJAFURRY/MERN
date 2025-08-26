@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function cc()
+        {
+            x = document.getElementById("d1");
+            z = document.getElementById("d3");
+            //alert(x);
+            //alert(y)
+            //document.write(y)
+            x.innerHTML = z.value;
+        }
+    </script>
+</head>
+<body>
+    <div id="d1">First dance</div>
+    <p id="d2">this is the end</p>
+    <input id="d3" onkeydown="cc()" />
+    <br>
+    type your input here: <textarea></textarea> <br>
+    <button onclick="cc()">Click me</button>
+</body>
