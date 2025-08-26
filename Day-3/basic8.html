@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+<script>
+    function l(){
+        //var p = document.getElementById("x2")
+        //p.value = "123456789"
+        a = document.getElementsByTagName("input");
+        //alert(a.length)
+        //document.write(a[1])
+        //a[1].value = "987654321"
+
+        db = ["new","life","song"]
+        for (count = 0; count <= db.length-1; count++){
+            //alert(count)
+            document.getElementsByTagName("input")[count].value = db[count]
+            //document.getElementsByTagName("input")[1].value = db[2]
+            //document.getElementsByTagName("input")[count].value = db[1]
+            //document.getElementsByTagName("input")= count;
+        }
+    }
+</script>
+</head>
+<body>
+    Name <input type="text"/>
+    <br>
+    Phone <input type="text" id="x2"/>
+    <br>
+    Feedback <input type="text"/>
+    <br>
+    <button onclick="l()">Click Me</button>
+
+</body>
+</html>
