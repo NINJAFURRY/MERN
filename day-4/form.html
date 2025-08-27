@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function n() {
+            //alert("e")
+            //alert(n)
+            //x = document.getElementById("2")
+            //x = document.getElementsByTagName("form")[1]
+            x = document.forms["Admin"]["in"]
+            var p = document.forms["Admin"]["it"]
+            y = x.value;
+            if (y == "") {
+                alert("Enter your name")
+                return false;
+            }
+            z = p.value;
+            if (z > 30 || z == "" || isNaN(z) ){
+                alert("Enter correct password")
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<form name="Admin" action="new.html" onsubmit="return n()">
+    Admin Username: <input name="in"/>
+    password: <input name="it">
+    <input type="submit"/>
+</form>
+    
+
+<form action="new.html" name="System" id="2">
+    System Username: <input required/>
+    password: <input/>
+    <input type="submit">
+</form>
+
+<form action="new.html" name="General" id="3">
+    General Username: <input/>
+    password: <input/>
+    <button onclick="n()">LogIn</button>
+</form>
+
+</body>
+</html>
